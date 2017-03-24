@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <test name="ChangePasswordTest(failed)">
+    <classes>
+      <class name="Suite.LiveTab">
+        <methods>
+          <include name="beforetest"/>
+        </methods>
+      </class> <!-- Suite.LiveTab -->
+      <class name="Suite.GameInfoTest">
+        <methods>
+          <include name="beforetest"/>
+        </methods>
+      </class> <!-- Suite.GameInfoTest -->
+      <class name="Suite.VegasTest">
+        <methods>
+          <include name="beforetest"/>
+        </methods>
+      </class> <!-- Suite.VegasTest -->
+      <class name="Suite.DepositTest">
+        <methods>
+          <include name="beforetest"/>
+        </methods>
+      </class> <!-- Suite.DepositTest -->
+      <class name="Suite.LoginErrorTest">
+        <methods>
+          <include name="beforetest"/>
+        </methods>
+      </class> <!-- Suite.LoginErrorTest -->
+      <class name="Suite.SideBarMenuTest">
+        <methods>
+          <include name="beforetest"/>
+        </methods>
+      </class> <!-- Suite.SideBarMenuTest -->
+      <class name="Suite.ContentPagesTest">
+        <methods>
+          <include name="beforetest"/>
+        </methods>
+      </class> <!-- Suite.ContentPagesTest -->
+      <class name="Suite.RegistratiomTest">
+        <methods>
+          <include name="beforetest"/>
+        </methods>
+      </class> <!-- Suite.RegistratiomTest -->
+      <class name="Suite.ChangePasswordTest">
+        <methods>
+          <include name="changepasswordtest" invocation-numbers="2"/>
+          <include name="beforetest"/>
+        </methods>
+      </class> <!-- Suite.ChangePasswordTest -->
+      <class name="Suite.LunchGameTest">
+        <methods>
+          <include name="beforetest"/>
+        </methods>
+      </class> <!-- Suite.LunchGameTest -->
+      <class name="Suite.SearchGameTest">
+        <methods>
+          <include name="beforetest"/>
+        </methods>
+      </class> <!-- Suite.SearchGameTest -->
+      <class name="Suite.PresenterTest">
+        <methods>
+          <include name="beforetest"/>
+        </methods>
+      </class> <!-- Suite.PresenterTest -->
+      <class name="Suite.Promotest">
+        <methods>
+          <include name="beforetest"/>
+        </methods>
+      </class> <!-- Suite.Promotest -->
+      <class name="Suite.ForgottenDetailsTest">
+        <methods>
+          <include name="beforetest"/>
+        </methods>
+      </class> <!-- Suite.ForgottenDetailsTest -->
+    </classes>
+  </test> <!-- ChangePasswordTest(failed) -->
+  <test name="RegistratiomTest(failed)">
+    <classes>
+      <class name="Suite.LiveTab">
+        <methods>
+          <include name="beforetest"/>
+        </methods>
+      </class> <!-- Suite.LiveTab -->
+      <class name="Suite.GameInfoTest">
+        <methods>
+          <include name="beforetest"/>
+        </methods>
+      </class> <!-- Suite.GameInfoTest -->
+      <class name="Suite.VegasTest">
+        <methods>
+          <include name="beforetest"/>
+        </methods>
+      </class> <!-- Suite.VegasTest -->
+      <class name="Suite.DepositTest">
+        <methods>
+          <include name="beforetest"/>
+        </methods>
+      </class> <!-- Suite.DepositTest -->
+      <class name="Suite.LoginErrorTest">
+        <methods>
+          <include name="beforetest"/>
+        </methods>
+      </class> <!-- Suite.LoginErrorTest -->
+      <class name="Suite.SideBarMenuTest">
+        <methods>
+          <include name="beforetest"/>
+        </methods>
+      </class> <!-- Suite.SideBarMenuTest -->
+      <class name="Suite.ContentPagesTest">
+        <methods>
+          <include name="beforetest"/>
+        </methods>
+      </class> <!-- Suite.ContentPagesTest -->
+      <class name="Suite.RegistratiomTest">
+        <methods>
+          <include name="registertest" invocation-numbers="0 1"/>
+          <include name="beforetest"/>
+        </methods>
+      </class> <!-- Suite.RegistratiomTest -->
+      <class name="Suite.ChangePasswordTest">
+        <methods>
+          <include name="beforetest"/>
+        </methods>
+      </class> <!-- Suite.ChangePasswordTest -->
+      <class name="Suite.LunchGameTest">
+        <methods>
+          <include name="beforetest"/>
+        </methods>
+      </class> <!-- Suite.LunchGameTest -->
+      <class name="Suite.SearchGameTest">
+        <methods>
+          <include name="beforetest"/>
+        </methods>
+      </class> <!-- Suite.SearchGameTest -->
+      <class name="Suite.PresenterTest">
+        <methods>
+          <include name="beforetest"/>
+        </methods>
+      </class> <!-- Suite.PresenterTest -->
+      <class name="Suite.Promotest">
+        <methods>
+          <include name="beforetest"/>
+        </methods>
+      </class> <!-- Suite.Promotest -->
+      <class name="Suite.ForgottenDetailsTest">
+        <methods>
+          <include name="beforetest"/>
+        </methods>
+      </class> <!-- Suite.ForgottenDetailsTest -->
+    </classes>
+  </test> <!-- RegistratiomTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

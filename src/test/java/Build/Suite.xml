@@ -1,0 +1,75 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+<test name="ChangePasswordTest">
+    <classes>
+        <class name="Suite.ChangePasswordTest" />  
+    </classes>
+</test>
+<test name="ContentPagesTest">
+    <classes>
+        <class name="Suite.ContentPagesTest" />  
+    </classes>
+</test>
+<test name="DepositTest">
+    <classes>
+        <class name="Suite.DepositTest" />  
+    </classes>
+</test>
+<test name="LiveTab">
+    <classes>
+        <class name="Suite.LiveTab" />  
+    </classes>
+</test>
+<test name="LoginErrorTest">
+    <classes>
+        <class name="Suite.LoginErrorTest" />  
+    </classes>
+</test>
+<test name="Promotest">
+    <classes>
+        <class name="Suite.Promotest" />  
+    </classes>
+</test>
+<test name="SearchGameTest">
+    <classes>
+        <class name="Suite.SearchGameTest" />  
+    </classes>
+</test>
+<test name="VegasTest">
+    <classes>
+        <class name="Suite.VegasTest" />  
+    </classes>
+    </test>
+<test name="PresenterTest">
+    <classes>
+        <class name="Suite.PresenterTest" />  
+    </classes>
+    </test>
+<test name="GameInfoTest">
+    <classes>
+        <class name="Suite.GameInfoTest" />  
+    </classes>
+</test>
+<test name="RegistratiomTest">
+    <classes>
+        <class name="Suite.RegistratiomTest" />  
+    </classes>
+</test>
+<test name="LunchGameTest">
+    <classes>
+        <class name="Suite.LunchGameTest" />  
+    </classes>
+</test>
+<test name="SideBarMenuTest">
+    <classes>
+        <class name="Suite.SideBarMenuTest" />  
+    </classes>
+</test>
+<test name="ForgottenDetailsTest">
+    <classes>
+        <class name="Suite.ForgottenDetailsTest" />  
+    </classes>
+</test>
+</suite>
+
