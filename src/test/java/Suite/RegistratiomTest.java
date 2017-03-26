@@ -37,7 +37,7 @@ public class RegistratiomTest extends TestBase {
 		input("register_confirpassword_xpath",confPassword);
 		String screename=ScreenName;
 		if(screename.equals("{generator}")){
-			screename=generateRandomAlphaNumeric(16,"");
+			screename=generateStringWithAllobedSplChars(16,"");
 			
 		}
 		input("register_screenname_xpath",screename);
@@ -63,18 +63,23 @@ public class RegistratiomTest extends TestBase {
 		Thread.sleep(2000l);
 		click("register_Submit_xpath");
 		Thread.sleep(3000);
-		// Verifying if user navigated to Welcome Page 
+		if(Result.equals("complete")){
+			// Verifying if user navigated to Welcome Page 
 		String Welcome_title=getText("welcomeTitlePage_xpath");
 		System.out.println(Welcome_title);
+		}
 		boolean result=isElementPresent("welcomeTitlePage_xpath");
 		String actualResult=null;
 	    if(result)
 			actualResult="SUCCESS";
 		else
 			actualResult="FAILURE";
-	 	Assert.assertEquals(expectedResult, actualResult);
+	    System.out.println("Goood1");
+		Assert.assertEquals(expectedResult, actualResult);
+		 System.out.println("Goood2");
+		
 		 
-		if(d.getCurrentUrl().equals("https://www.supercasino.com/welcome"))
+		/*if(d.getCurrentUrl().equals("https://www.supercasino.com/welcome"))
 			System.out.println("USER HAS REGISTER SUCCESSFULLY");
 		else
 			System.out.println("USER FAILED TO REGISTER");
@@ -85,6 +90,7 @@ public class RegistratiomTest extends TestBase {
 			 click("hp_sidebarMenuIcon_xpath");
 		 Thread.sleep(1000);
 		 click("hp_sideBarMenu_Logout_xpath");
+		 */
 
 }
 	@ DataProvider
@@ -115,7 +121,7 @@ public class RegistratiomTest extends TestBase {
 		data[1][0]="qwert";
 		data[1][1]="bola323";
 		data[1][2]="loadipo2";
-		data[1][3]="123685";
+		data[1][3]="123adaertt";
 		data[1][4]="test@olaytech.com";
 		data[1][5]="Dr";
 		data[1][6]="mark";
@@ -124,9 +130,9 @@ public class RegistratiomTest extends TestBase {
 		data[1][9]="May";
 		data[1][10]="2008";
 		data[1][11]="80";
-		data[1][12]="hull";
-		data[1][13]="EAST RIDING OF YORKSHIRE  united kingdom european";
-		data[1][14]="hu6 7rx";
+		data[1][12]="London";
+		data[1][13]="Netplay TV Plc 80 silverthorne road London";
+		data[1][14]="sw8 3he";
 		data[1][15]="0207yt3252123";
 		data[1][16]="FAILURE";
 		data[1][17]="Incomplete";

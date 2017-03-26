@@ -3,6 +3,8 @@ package Suite;
 import java.io.IOException;
 
 import org.apache.commons.configuration.ConfigurationException;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
@@ -21,9 +23,9 @@ public class ChangePasswordTest extends TestBase {
 	}
 
 	@Test(dataProvider = "getdata")
-	public void changepasswordtest(String oldpassword, String newpassword, String confirmpassword,
+	public void changepasswordtest(String oldpassword, String newpassword, String confirmpassword, String Result,
 			String expectedResult) throws InterruptedException, ConfigurationException {
-		d.get(Config.getProperty("URL"));
+		//d.get(Config.getProperty("URL"));
 		doDefaultLogin(Config.getProperty("defaultUsername"));
 		Thread.sleep(3000L);
 		click("hp_sidebarMenuIcon_xpath");
@@ -45,44 +47,15 @@ public class ChangePasswordTest extends TestBase {
 			input("chnagepassword_confirmpassword_xpath", confirmpassword);
 		}
 		click("changepassword_submit_xpath");
-		Thread.sleep(3000L);
-		boolean result = isElementPresent("ChangePassword_error_xpath");
-		System.out.println("Checking for spot miskate");
-		String actualResult = null;
-		if (result){
-			actualResult = "FAILURE";
-	}
-		else {
-			actualResult = "SUCCESS";
-			System.out.println(expectedResult);
-			System.out.println(actualResult);
-			System.out.println(result);
-		// Assert.assertTrue(result);
-		}
-		Assert.assertEquals(expectedResult, actualResult);
-		System.out.println("Expected--------------" + "NoError");
-
-		if (expectedResult.equals("SUCCESS")) {
+		if (Result.equals("Correct")) {
 			System.out.println("cHECKING FOR ERROR");
 			Thread.sleep(2000);
 			String textTitle = getText("YourPasswordHasSuceesfyllyChange_xpath");
 			System.out.println(textTitle);
-			boolean result1 = isElementPresent("YourPasswordHasSuceesfyllyChange_xpath");
-			System.out.println("cHECKING FOR ERROR1");
-			String actualResult1 = null;
-			if (result1) {
-				actualResult1 = "SUCCESS";
-			} else {
-				actualResult1 = "FAILURE";
-			
+			Assert.assertEquals(textTitle,"YOUR PASSWORD HAS BEEN SUCCESSFULLY CHANGED" );
+			System.out.println("good1");
 			TestUti.updateproperty("defaultPassword", NewPassWord);
-			System.out.println(">>" + expectedResult);
-			System.out.println(actualResult1);
-			}
-			// Assert.assertTrue(result1);
-			Assert.assertEquals(expectedResult, actualResult1);
-			
-
+			System.out.println("good2");
 		}
 		click("hp_sidebarMenuIcon_xpath");
 		Thread.sleep(1000);
@@ -98,22 +71,25 @@ public class ChangePasswordTest extends TestBase {
 
 	@DataProvider
 	public Object[][] getdata() {
-		Object data[][] = new Object[3][4];
+		Object data[][] = new Object[3][5];
 		// frist row
-		data[0][0] = "@?U~tiS[OqO'8\\%-uQ7o";
+		data[0][0] = "Bola123$%^";
 		data[0][1] = "$$$$$%%21a";
 		data[0][2] = "$$$$$%%21a";
-		data[0][3] = "FAILURE";
+		data[0][3] = "Incompete";
+		data[0][4] = "FAILURE";
 		// Second row
-		data[1][0] = "@?U~tiS[OqO'8\\%-uQ7o";
+		data[1][0] = "Bola123$%^";
 		data[1][1] = "Bol";
 		data[1][2] = "Bol";
-		data[1][3] = "FAILURE";
+		data[1][3] = "Incompelete";
+		data[1][4] = "FAILURE";
 		// Third Row
-		data[2][0] = "M|)Hduy38Ek'iM'bwQF@";
+		data[2][0] = "VXHX]]-=oc>NAs2VK&x1";
 		data[2][1] = "{generator}";
 		data[2][2] = "{generator}";
-		data[2][3] = "SUCCESS";
+		data[2][3] = "Correct";
+		data[2][4] = "SUCCESS";
 
 		return data;
 	}
