@@ -48,8 +48,8 @@ public class LoginTest extends TestBase{
 		data[1][1]="Bola12";
 		data[1][2]="FAILURE";
 		//Third Row
-		data[2][0]="Bonus104";
-		data[2][1]="Bola1234$%^";
+		data[2][0]="solomon2017";
+		data[2][1]="Bola123$%^";
 		data[2][2]="SUCCESS";
 		return data;
 

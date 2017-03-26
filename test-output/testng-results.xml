@@ -1,39 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="3" passed="2">
+<testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="76533" started-at="2017-03-26T01:18:59Z" finished-at="2017-03-26T01:20:16Z">
+  <suite name="Default suite" duration-ms="111272" started-at="2017-03-26T01:40:15Z" finished-at="2017-03-26T01:42:06Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="76533" started-at="2017-03-26T01:18:59Z" finished-at="2017-03-26T01:20:16Z">
-      <class name="Suite.ChangePasswordTest">
-        <test-method status="PASS" signature="beforetest()[pri:0, instance:Suite.ChangePasswordTest@2133c8f8]" name="beforetest" is-config="true" duration-ms="5804" started-at="2017-03-26T02:18:59Z" finished-at="2017-03-26T02:19:05Z">
+    <test name="Default test" duration-ms="111272" started-at="2017-03-26T01:40:15Z" finished-at="2017-03-26T01:42:06Z">
+      <class name="Suite.LoginTest">
+        <test-method status="PASS" signature="beforetest()[pri:0, instance:Suite.LoginTest@1b0375b3]" name="beforetest" is-config="true" duration-ms="4957" started-at="2017-03-26T02:40:15Z" finished-at="2017-03-26T02:40:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforetest -->
-        <test-method status="PASS" signature="changepasswordtest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Suite.ChangePasswordTest@2133c8f8]" name="changepasswordtest" duration-ms="23770" started-at="2017-03-26T02:19:05Z" data-provider="getdata" finished-at="2017-03-26T02:19:29Z">
+        <test-method status="PASS" signature="logintest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Suite.LoginTest@1b0375b3]" name="logintest" duration-ms="39922" started-at="2017-03-26T02:40:20Z" data-provider="getdata" finished-at="2017-03-26T02:40:59Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Bola123$%^]]>
+                <![CDATA[Solomon2014]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[$$$$$%%21a]]>
+                <![CDATA[]]>
               </value>
             </param>
             <param index="2">
-              <value>
-                <![CDATA[$$$$$%%21a]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Incompete]]>
-              </value>
-            </param>
-            <param index="4">
               <value>
                 <![CDATA[FAILURE]]>
               </value>
@@ -41,30 +31,20 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- changepasswordtest -->
-        <test-method status="PASS" signature="changepasswordtest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Suite.ChangePasswordTest@2133c8f8]" name="changepasswordtest" duration-ms="18748" started-at="2017-03-26T02:19:29Z" data-provider="getdata" finished-at="2017-03-26T02:19:48Z">
+        </test-method> <!-- logintest -->
+        <test-method status="PASS" signature="logintest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Suite.LoginTest@1b0375b3]" name="logintest" duration-ms="33718" started-at="2017-03-26T02:40:59Z" data-provider="getdata" finished-at="2017-03-26T02:41:33Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Bola123$%^]]>
+                <![CDATA[SafeCharge]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Bol]]>
+                <![CDATA[Bola12]]>
               </value>
             </param>
             <param index="2">
-              <value>
-                <![CDATA[Bol]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Incompelete]]>
-              </value>
-            </param>
-            <param index="4">
               <value>
                 <![CDATA[FAILURE]]>
               </value>
@@ -72,79 +52,29 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- changepasswordtest -->
-        <test-method status="FAIL" signature="changepasswordtest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Suite.ChangePasswordTest@2133c8f8]" name="changepasswordtest" duration-ms="28186" started-at="2017-03-26T02:19:48Z" data-provider="getdata" finished-at="2017-03-26T02:20:16Z">
+        </test-method> <!-- logintest -->
+        <test-method status="PASS" signature="logintest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Suite.LoginTest@1b0375b3]" name="logintest" duration-ms="32654" started-at="2017-03-26T02:41:33Z" data-provider="getdata" finished-at="2017-03-26T02:42:06Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[VXHX]]-=oc>NAs2VK&x]]>
+                <![CDATA[solomon2017]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[{generator}]]>
+                <![CDATA[Bola123$%^]]>
               </value>
             </param>
             <param index="2">
-              <value>
-                <![CDATA[{generator}]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Correct]]>
-              </value>
-            </param>
-            <param index="4">
               <value>
                 <![CDATA[SUCCESS]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [YOUR PASSWORD HAS BEEN SUCCESSFULLY CHANGED] but found [CHANGE PASSWORD]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [YOUR PASSWORD HAS BEEN SUCCESSFULLY CHANGED] but found [CHANGE PASSWORD]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
-	at org.testng.Assert.assertEquals(Assert.java:116)
-	at org.testng.Assert.assertEquals(Assert.java:190)
-	at org.testng.Assert.assertEquals(Assert.java:200)
-	at Suite.ChangePasswordTest.changepasswordtest(ChangePasswordTest.java:55)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- changepasswordtest -->
-      </class> <!-- Suite.ChangePasswordTest -->
+        </test-method> <!-- logintest -->
+      </class> <!-- Suite.LoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

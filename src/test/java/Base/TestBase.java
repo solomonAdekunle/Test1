@@ -12,6 +12,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -200,6 +201,10 @@ public class TestBase {
 				input("username_Selector",Username);
 				input("password_Selector",Password);
 				click("Signin_Selector");
+				
+				WebElement PlayerMessage=d.findElement(By.cssSelector("div.playerMessages-modal .footer .ok"));
+				if(PlayerMessage.isDisplayed())
+					PlayerMessage.click();
 	}
 			public void doDefaultLogin(String browser) throws InterruptedException{
 				doLogin(browser, Config.getProperty("defaultUsername"), Config.getProperty("defaultPassword"));
